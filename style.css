@@ -35,13 +35,11 @@ header {
     list-style: none;
 }
 
-.nav > .nav-pages > li > a, 
-.nav > .nav-icons > a {
+a {
     text-decoration: none;
     color: white;
 }
-
-.nav > .nav-pages > li > a:hover {
+a:hover {
     text-decoration: underline;
     text-decoration-color: white;
 }
@@ -70,7 +68,7 @@ header {
 
 /* -----------------LAYOUT------------------ */
 
-.row {
+.layout {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -107,6 +105,10 @@ header {
     bottom: 110px;
 }
 
+.tag-green:nth-child(3){
+    left: 0;
+}
+
 .product-card span:nth-of-type(1){
     color: red;
     font-weight: 500;
@@ -127,7 +129,7 @@ header {
     right: 0;
 }
 
-/* CUORE + ANIM */
+/* CUORE + ANIMAZIONE */
 .heart-container {
     border: none;
     padding: 0px 20px;
@@ -157,6 +159,7 @@ header {
     opacity: 0;
     transform: scale(3);
     position: absolute;
+    cursor: pointer;
 }
 
 .toggle:checked + .heart {
@@ -167,4 +170,43 @@ header {
     100% { 
       background-position: -2800px;
    }
- }
+}
+
+ /* -----------------FOOTER------------------ */
+ 
+footer {
+    height: 130px;
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: 70px;
+}
+
+.footer-info {
+    padding: 25px 0;
+}
+
+.footer-info a {
+    padding-right: 15px;
+}
+
+.footer-info h3 {
+    margin: 10px 0;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: -75px;
+    text-align: center;
+}
+
+.footer-contacts h4 {
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.footer-contacts a {
+    padding: 0 2px;
+    font-size: 22px;
+}
