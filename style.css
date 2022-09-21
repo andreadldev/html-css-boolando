@@ -10,13 +10,26 @@
     margin: auto;
 }
 
+main, footer {
+    margin-top: 70px;
+}
+
 /* -----------------HEADER------------------ */
 
 header {
     color: white;
     text-align: center;    
+}
+
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
     background-color: #FF6900;
 }
+
 
 .nav {
     display: flex;
