@@ -38,6 +38,7 @@ header {
 }
 
 .nav > .nav-pages {
+    width: 20%;
     display: flex;
     justify-content: flex-start;
     font-weight: 500;
@@ -54,10 +55,6 @@ a {
 a:hover {
     text-decoration: underline;
     text-decoration-color: white;
-}
-
-.nav > .nav-pages {
-    width: 20%;
 }
 
 .nav > .nav-logo {
