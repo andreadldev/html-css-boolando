@@ -85,7 +85,6 @@ header {
     width: 447px;
 }
 
-.product-card .like,
 .product-card .tag {
     position: absolute;
 }
@@ -108,15 +107,6 @@ header {
     bottom: 110px;
 }
 
-.like {
-    border: none;
-    padding: 15px;
-    background-color: white;
-    font-size: 20px;
-    top: 10px;
-    right: 0;
-}
-
 .product-card span:nth-of-type(1){
     color: red;
     font-weight: 500;
@@ -125,3 +115,56 @@ header {
 .product-card span:nth-of-type(2){
     text-decoration: line-through;
 }
+
+.product-card::after {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    top: 10px;
+    right: 0;
+}
+
+/* CUORE + ANIM */
+.heart-container {
+    border: none;
+    padding: 0px 20px;
+    background-color: white;
+    top: 25px;
+    right: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.heart-box {
+    position: relative;
+}
+
+.heart {  
+    position: absolute;  background:url('https://abs.twimg.com/a/1454637594/img/t1/web_heart_animation.png');
+    background-position: 0px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    top: -40px;
+    left: -40px;
+    pointer-events: none;
+  }
+
+.toggle {
+    opacity: 0;
+    transform: scale(3);
+    position: absolute;
+}
+
+.toggle:checked + .heart {
+    animation: heart-animate 0.8s steps(28) forwards;
+}
+
+@keyframes heart-animate {
+    100% { 
+      background-position: -2800px;
+   }
+ }
