@@ -10,7 +10,7 @@
     margin: auto;
 }
 
-/* -----------------HEADER/* ----------------- */
+/* -----------------HEADER------------------ */
 
 header {
     color: white;
@@ -47,7 +47,7 @@ header {
 }
 
 .nav > .nav-pages {
-    width: 14%;
+    width: 20%;
 }
 
 .nav > .nav-logo {
@@ -66,4 +66,20 @@ header {
 
 .nav-pages *, .nav-icons * {
     padding: 0 2px;
+}
+
+/* -----------------MAIN------------------ */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    margin-top: 50px;
+}
+
+.product-card img {
+    width: 447px;
 }
