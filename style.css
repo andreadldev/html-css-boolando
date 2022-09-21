@@ -38,7 +38,6 @@ header {
 }
 
 .nav > .nav-pages {
-    width: 60%;
     display: flex;
     justify-content: flex-start;
     font-weight: 500;
